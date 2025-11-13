@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Game Details — Himanshu_mods</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-anim" aria-hidden="true"></div>
+  <header class="site-header container">
+    <a class="brand" href="index.html"><img src="assets/logo.png" alt="Himanshu_mods logo"><h1>Himanshu_mods</h1></a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="detail-grid">
+      <div>
+        <img id="detailThumb" class="detail-thumb" src="assets/game1.jpg" alt="thumb">
+        <div class="screenshots" id="screenshots">
+          <img src="assets/game2.jpg" alt="s1" />
+        </div>
+      </div>
+
+      <div>
+        <a href="index.html" class="btn">← Back to Home</a>
+        <h1 id="gameTitle">Example Game — Demo Mod</h1>
+        <p><strong>Version:</strong> <span id="gameVersion">1.0</span> &nbsp; • &nbsp; <strong>Size:</strong> <span id="gameSize">50 MB</span></p>
+        <p id="gameDesc">Demo description here.</p>
+
+        <a id="downloadBtn" class="download-btn" href="#" onclick="fakeDownload(event)">Download (Direct)</a>
+        <div id="downloadCount" class="muted" style="margin-top:8px">Downloads: 12,345</div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© 2025 Himanshu_mods. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

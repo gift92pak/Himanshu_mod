@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Himanshu_mods — Legal Mods & Indie APKs</title>
+  <meta name="description" content="Himanshu_mods — legal mods, indie APKs, demos and community-created game content." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-anim" aria-hidden="true"></div>
+  <header class="site-header container">
+    <a class="brand" href="index.html"><img src="assets/logo.png" alt="Himanshu_mods logo"><h1>Himanshu_mods</h1></a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="#privacy">Privacy</a>
+    </nav>
+    <div class="search-wrap">
+      <input id="searchInput" placeholder="Search games or categories..." />
+    </div>
+  </header>
+
+  <main class="container main-grid">
+    <aside class="sidebar">
+      <section class="card">
+        <h3>Categories</h3>
+        <ul class="category-list">
+          <li><button class="cat active" onclick="renderGames(games)">All</button></li>
+          <li><button class="cat" onclick="renderGames(games.filter(x=>x.category==='Action'))">Action</button></li>
+          <li><button class="cat" onclick="renderGames(games.filter(x=>x.category==='Racing'))">Racing</button></li>
+          <li><button class="cat" onclick="renderGames(games.filter(x=>x.category==='Shooting'))">Shooting</button></li>
+          <li><button class="cat" onclick="renderGames(games.filter(x=>x.category==='Puzzle'))">Puzzle</button></li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3>Trending</h3>
+        <ul id="trendingList">
+          <li>Neon Speed — 12,345</li>
+          <li>Shadow Strike — 8,745</li>
+          <li>Puzzle Cube — 4,260</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <div class="ad-placeholder">Sidebar Ad Placeholder</div>
+      </section>
+    </aside>
+
+    <section class="content">
+      <section class="controls">
+        <div><h2>Latest Uploads</h2><p class="muted">Legal and permissioned mods / indie APK demos only.</p></div>
+      </section>
+
+      <section id="gamesGrid" class="games-grid">
+        <!-- JS will populate -->
+      </section>
+
+      <section class="card about" id="about">
+        <h2>About Us</h2>
+        <p>Himanshu_mods is a demo template for legal game mods and indie APKs. Only distribute content you own or have permission for.</p>
+      </section>
+
+      <section class="card" id="contact">
+        <h2>Contact</h2>
+        <p>Contact: contact@himanshu_mods.example</p>
+      </section>
+
+      <section class="card" id="privacy">
+        <h2>Privacy Policy</h2>
+        <p>Demo privacy policy placeholder — replace with a real policy before going live.</p>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      © 2025 Himanshu_mods. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
